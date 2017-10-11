@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomUIView" customModule="AGCustomViewBy_XIB" customModuleProvider="target">
+            <connections>
+                <outlet property="custumView" destination="iN0-l3-epB" id="MQg-dS-DQB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PNM-Xq-eba">
+                    <rect key="frame" x="10" y="10" width="75" height="75"/>
+                    <color key="backgroundColor" red="0.1960784314" green="0.83921568629999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="PNM-Xq-eba" secondAttribute="height" multiplier="1:1" id="em3-Fa-PIo"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Custom VIew" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgQ-1i-bKq">
+                    <rect key="frame" x="95" y="10" width="270" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93932330610000003" green="0.38194861600000002" blue="0.25270261910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bgQ-1i-bKq" secondAttribute="trailing" constant="10" id="7XT-Rd-YiK"/>
+                <constraint firstItem="PNM-Xq-eba" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.2" id="OZD-Da-BcZ"/>
+                <constraint firstItem="PNM-Xq-eba" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="SYn-D2-MGG"/>
+                <constraint firstItem="bgQ-1i-bKq" firstAttribute="top" secondItem="PNM-Xq-eba" secondAttribute="top" id="XIa-bO-Fk7"/>
+                <constraint firstItem="PNM-Xq-eba" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="eXF-rs-evg"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="PNM-Xq-eba" secondAttribute="bottom" constant="10" id="wWW-kY-03S"/>
+                <constraint firstItem="bgQ-1i-bKq" firstAttribute="leading" secondItem="PNM-Xq-eba" secondAttribute="trailing" constant="10" id="yB8-Yb-U0p"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="-231"/>
+        </view>
+    </objects>
+</document>
